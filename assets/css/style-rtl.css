@@ -1,0 +1,121 @@
+/* ============================== */
+/* HERO SECTION                   */
+/* ============================== */
+
+/* Text alignment for large screens */
+[dir='rtl'] .hero-content {
+  text-align: right !important;
+}
+
+/* Override Bootstrap's text-lg-start class */
+@media (min-width: 992px) {
+  [dir='rtl'] .hero-section .text-lg-start {
+    text-align: right !important;
+  }
+}
+
+/* Keep centered on mobile */
+@media (max-width: 991px) {
+  [dir='rtl'] .hero-content,
+  [dir='rtl'] .hero-section .text-center {
+    text-align: center !important;
+  }
+}
+
+/* Button alignment */
+[dir='rtl'] .hero-section .btn {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+/* ============================== */
+/* GENERAL RTL ADJUSTMENTS        */
+/* ============================== */
+
+/* Icons that should flip in RTL */
+[dir='rtl'] .fa-arrow-right::before {
+  content: '\f060'; /* fa-arrow-left */
+}
+
+[dir='rtl'] .fa-arrow-left::before {
+  content: '\f061'; /* fa-arrow-right */
+}
+
+/* Spacing utilities - swap left/right margins and paddings */
+[dir='rtl'] .ms-auto {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+[dir='rtl'] .me-auto {
+  margin-right: 0 !important;
+  margin-left: auto !important;
+}
+
+/* Text alignment utilities */
+[dir='rtl'] .text-start {
+  text-align: right !important;
+}
+
+[dir='rtl'] .text-end {
+  text-align: left !important;
+}
+
+@media (min-width: 992px) {
+  [dir='rtl'] .text-lg-start {
+    text-align: right !important;
+  }
+  
+  [dir='rtl'] .text-lg-end {
+    text-align: left !important;
+  }
+}
+
+
+/* ============================== */
+/* FORMS (for contact page)       */
+/* ============================== */
+
+[dir='rtl'] .form-label {
+  text-align: right;
+}
+
+[dir='rtl'] .form-control,
+[dir='rtl'] .form-select {
+  text-align: right;
+}
+
+[dir='rtl'] input::placeholder,
+[dir='rtl'] textarea::placeholder {
+  text-align: right;
+}
+
+
+/* ============================== */
+/* LISTS & CONTENT                */
+/* ============================== */
+
+[dir='rtl'] ul,
+[dir='rtl'] ol {
+  padding-right: 2rem;
+  padding-left: 0;
+}
+
+[dir='rtl'] li {
+  text-align: right;
+}
+
+
+/* ============================== */
+/* CARDS & SECTIONS               */
+/* ============================== */
+
+[dir='rtl'] .card-body {
+  text-align: right;
+}
+
+[dir='rtl'] .card-title,
+[dir='rtl'] .card-text {
+  text-align: right;
+}

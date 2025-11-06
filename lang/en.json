@@ -1,0 +1,24 @@
+{
+  "pageMeta": {
+    "home": {
+      "title": "Asteraactive - Home",
+      "description": "Asteraactive is a leading firm in construction, electrical, and mechanical solutions, building trust, safety, and innovation.",
+      "ogTitle": "Asteraactive - Construction & Electrical Solutions",
+      "ogDescription": "From general contracting to advanced electrical systems, Asteraactive delivers quality and safety on every project."
+    }
+  },
+  "nav": {
+    "toggle": "Toggle navigation",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact",
+    "getInTouch": "Get in Touch"
+  },
+  "hero": {
+        "headline": "AT INTERACTIVE, WE BUILD MORE THAN PROJECTS: WE BUILD TRUST, SAFETY, AND INNOVATION",
+        "subheading": "We strive to deliver integrated, high-quality solutions adhering to the highest safety and efficiency standards.",
+        "ctaButton": "Our Services"
+    }
+}
