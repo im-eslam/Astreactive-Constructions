@@ -1,0 +1,503 @@
+/* ============================== */
+/* GLOBAL STYLES                */
+/* ============================== */
+:root {
+  --primary-color: #ecb360;
+  --primary-hover: #d4a154;
+  --text-dark: #212529;
+  --text-light: #f8f9fa;
+  --primary-dark: #6e4900;
+}
+
+/* ============================== */
+/* Header                         */
+/* ============================== */
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+  color: var(--text-dark);
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--primary-color) !important;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+[dir='rtl'] .navbar-nav .nav-link::after {
+  left: auto;
+  right: 0;
+}
+
+/* Header Layout */
+.navbar-collapse {
+  justify-content: space-between;
+}
+
+.header-actions {
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .header-actions {
+    gap: 0.75rem;
+  }
+}
+
+/* Language Switcher Dropdown */
+.lang-switcher .dropdown-toggle {
+  font-size: 1.25rem;
+  color: var(--text-dark);
+  padding: 0 0.5rem !important;
+}
+
+.lang-switcher .dropdown-toggle:hover {
+  color: var(--primary-color);
+}
+
+.lang-switcher .dropdown-toggle::after {
+  display: none;
+}
+
+.lang-switcher {
+  position: relative;
+}
+
+.lang-switcher .dropdown-menu {
+  position: absolute !important;
+  min-width: 150px;
+  margin-top: 0.5rem;
+  z-index: 1050 !important;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+[dir='ltr'] .lang-switcher .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+[dir='rtl'] .lang-switcher .dropdown-menu {
+  left: 0;
+  right: auto;
+}
+
+@media (max-width: 768px) {
+  [dir='ltr'] .lang-switcher .dropdown-menu {
+    left: 0;
+    right: auto;
+  }
+
+  [dir='rtl'] .lang-switcher .dropdown-menu {
+    right: 0;
+    left: auto;
+  }
+}
+
+/* Primary Button */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+  color: var(--text-dark);
+}
+
+/* Mobile Menu Icon */
+.navbar-toggler {
+  border: none;
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(236, 179, 96, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ============================== */
+/* HERO SECTION                */
+/* ============================== */
+.hero-section {
+  background-image: url('../../resources/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #2c3e50;
+  min-height: 80vh;
+  position: relative;
+}
+
+.hero-section .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section h1 {
+  color: #ffffff;
+}
+
+.hero-section p,
+.hero-section .lead {
+  color: #ffffff;
+}
+
+.hero-section .text-white-75 {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.hero-section .btn-primary {
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.hero-section .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* ============================== */
+/* CLIENTS SECTION                */
+/* ============================== */
+.clients-section h2 {
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.logo-scroller {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+
+.logo-scroller__inner {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 4rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.logo-scroller__inner img {
+  height: 40px;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.logo-scroller__inner img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Scrolling Animation */
+.logo-scroller[data-animated='true'] {
+  overflow: hidden;
+}
+
+.logo-scroller[data-animated='true'] .logo-scroller__inner {
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.logo-scroller:hover .logo-scroller__inner {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-100% - var(--_gap, 3rem)));
+  }
+}
+
+/* ============================== */
+/* ABOUT US SECTION               */
+/* ============================== */
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  color: var(--text-dark); /* Text turns dark for contrast */
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transform: translateY(-2px); /* Slight "pop" effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================== */
+/* SECTION 5 SECTION              */
+/* ============================== */
+
+/* Style the section headline */
+.services-section h2 {
+  color: var(--text-gold-dark); /* Use the accessible gold color */
+}
+
+/* Style for the service card */
+.service-card {
+  background-color: #ffffff;
+  border-radius: 8px; /* Soft rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  transition: all 0.3s ease;
+  height: 100%; /* Makes all cards in a row the same height */
+}
+
+/* "Shiny" Hover Effect */
+.service-card:hover {
+  transform: translateY(-8px); /* Card "pops" up */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the icon wrapper */
+.service-card .icon-wrapper {
+  color: var(--primary-color);
+}
+
+.service-card h3 {
+  color: var(--text-dark);
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #6c757d; /* Bootstrap's 'text-muted' color */
+}
+
+/* Style the "View All Services" button */
+.services-section .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================== */
+/* SECTION 6: PROJECTS (SUMMARY)  */
+/* ============================== */
+
+/* Style the section headline */
+.projects-summary h2 {
+  color: var(--text-gold-dark); /* Use the accessible gold color */
+}
+
+/* This is the main container for the card */
+.project-card {
+  position: relative;
+  overflow: hidden; /* Hides the "zoomed" part of the image */
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 1. DEFAULT STATE: The Image */
+.project-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image fills the card */
+  transition: transform 0.4s ease; /* The "image motion" */
+}
+
+/* 2. DEFAULT STATE: The "Dark Overlayer" & Text */
+.project-card-content {
+  /* This sits on top of the image */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* This is the "dark overlayer" */
+  background-color: rgba(0, 0, 0, 0.6);
+
+  /* This centers the text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--text-light);
+  text-align: center;
+  padding: 1rem;
+
+  /* This is for the "bright" hover effect */
+  transition: all 0.4s ease;
+}
+
+.project-card-content p {
+  color: var(--primary-color); /* Makes the category "gold" */
+  font-weight: 500;
+}
+
+/* --- 3. THE "SHINY" HOVER EFFECT --- */
+
+/* 1. On hover, the "dark overlayer" fades out (gets "bright") */
+.project-card:hover .project-card-content {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.2); /* Fades to a lighter overlay */
+}
+
+/* 2. On hover, the image (the "motion") zooms in */
+.project-card:hover .project-card-img {
+  transform: scale(1.1);
+}
+
+/* ... (all your existing styles) ... */
+
+/* ============================== */
+/* SECTION 8: CALL TO ACTION      */
+/* ============================== */
+
+.cta-section {
+  background-color: var(--text-dark);
+}
+
+.cta-section .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* New Contact Info Block Styles */
+.contact-info-block {
+  display: flex; /* Aligns icon and text side-by-side */
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.05); /* Subtle dark card */
+  padding: 1.5rem;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.contact-info-block .icon {
+  color: var(--primary-color);
+  margin-right: 1.5rem;
+}
+
+.contact-info-block .text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* This is the "Call Us Directly" label */
+.contact-info-block span {
+  color: var(--text-light);
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+/* This is the phone/email link */
+.contact-info-block .contact-link {
+  color: var(--text-light);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info-block .contact-link:hover {
+  color: var(--primary-color); /* "Shiny" hover effect */
+}
+
+/* ============================== */
+/* SECTION 9: FOOTER              */
+/* ============================== */
+
+/* Style for the "Quick Links" list */
+.footer-links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links-list li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links-list a {
+    color: var(--text-light);
+    opacity: 0.75;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* "Shiny" hover effect */
+.footer-links-list a:hover {
+    color: var(--primary-color);
+    opacity: 1;
+    padding-left: 5px; /* Pushes the link slightly on hover */
+}
+
+/* Style for the "Contact Us" list */
+.footer-contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+    opacity: 0.75;
+}
+
+.footer-contact-item .icon {
+    color: var(--primary-color);
+    margin-right: 1rem; /* Space between icon and text */
+    min-width: 20px; /* Ensures text aligns */
+    text-align: center;
+}
+
+.footer-contact-item a {
+    color: var(--text-light);
+    opacity: 0.75;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-contact-item a:hover {
+    color: var(--primary-color);
+    opacity: 1;
+}

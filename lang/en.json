@@ -1,0 +1,85 @@
+{
+  "pageMeta": {
+    "home": {
+      "title": "Asteraactive - Home",
+      "description": "Asteraactive is a leading firm in construction, electrical, and mechanical solutions, building trust, safety, and innovation.",
+      "ogTitle": "Asteraactive - Construction & Electrical Solutions",
+      "ogDescription": "From general contracting to advanced electrical systems, Asteraactive delivers quality and safety on every project."
+    }
+  },
+  "nav": {
+    "toggle": "Toggle navigation",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact",
+    "getInTouch": "Get in Touch"
+  },
+  "hero": {
+    "headline": "AT INTERACTIVE, WE BUILD MORE THAN PROJECTS: WE BUILD TRUST, SAFETY, AND INNOVATION",
+    "subheading": "We strive to deliver integrated, high-quality solutions adhering to the highest safety and efficiency standards.",
+    "ctaButton": "Our Services"
+  },
+  "clients": {
+    "headline": "Partners of Success"
+  },
+  "aboutSummary": {
+    "headline": "WHO ARE WE?",
+    "text": "Interactive Contracting and Electrical Supply Company was established to be a leading firm in electrical, mechanical, and construction fields. We have a team of experienced and qualified engineers and technicians, and we commit to executing projects accurately and on time.",
+    "button": "Read More About Us"
+  },
+  "servicesSummary": {
+    "headline": "OUR CORE SERVICES",
+    "card1_title": "Construction Projects",
+    "card1_text": "General contracting for residential, commercial, and industrial buildings.",
+    "card2_title": "Electrical Works",
+    "card2_text": "Design and implementation of all electrical systems, from lighting to power panels.",
+    "card3_title": "Mechanical Works",
+    "card3_text": "Full installation of HVAC, firefighting, ventilation, and smoke control systems.",
+    "card4_title": "Security & Light Current",
+    "card4_text": "Advanced solutions for CCTV, fire alarms, access control, and data systems.",
+    "button": "View All Services"
+  },
+  "projectsSummary": {
+    "headline": "OUR FEATURED PROJECTS",
+    "card1_title": "Commercial Building",
+    "card1_category": "Construction",
+    "card2_title": "Data Center Electrical",
+    "card2_category": "Electrical Works",
+    "card3_title": "Hospital HVAC System",
+    "card3_category": "Mechanical",
+    "card4_title": "CCTV & Access Control",
+    "card4_category": "Security Systems",
+    "button": "View All Projects"
+  },
+  "benefitsSummary": {
+    "headline": "WHY CHOOSE US?",
+    "card1_title": "Execution Quality",
+    "card1_text": "We adhere to the highest quality standards from design to delivery and implement strict control systems to ensure the desired outcomes.",
+    "card2_title": "Health & Safety",
+    "card2_text": "We place great importance on applying health and safety standards on all work sites, ensuring a safe, accident-free environment.",
+    "card3_title": "Commitment to Deadlines",
+    "card3_text": "We are committed to delivering projects on time, without delays. We prepare accurate schedules and constantly monitor progress."
+  },
+  "cta": {
+    "headline": "LET'S BUILD YOUR NEXT PROJECT",
+    "subheading": "Ready to get started? Contact us today for a free, no-obligation consultation and let's discuss your needs.",
+
+    "phoneLabel": "Call Us Directly",
+    "phoneNumber": "01000541406",
+    "emailLabel": "Email Us",
+    "emailAddress": "Interactive.eg99@gmail.com",
+
+    "button": "Get in Touch"
+  },
+  "footer": {
+    "aboutText": "A leading firm in electrical, mechanical, and construction fields, committed to executing projects with quality and safety.",
+    "quickLinksTitle": "Quick Links",
+    "contactTitle": "Contact Us",
+    "addressLabel": "Villa 207 Ahmed Rateb/Sad Ibn Obada, First 6th of October",
+    "phoneLabel": "01000541406",
+    "emailLabel": "Interactive.eg99@gmail.com",
+    "copyright": "© 2025 Asteraactive. All Rights Reserved."
+  }
+}
