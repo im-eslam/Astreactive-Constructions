@@ -1,0 +1,124 @@
+/* ============================== */
+/* Header Navigation          */
+/* ============================== */
+
+[dir='rtl'] .navbar-nav .nav-link::after {
+  left: auto;
+  right: 0;
+}
+
+[dir='rtl'] .lang-dropdown-menu {
+  left: 0;
+  right: auto;
+}
+
+@media (max-width: 992px) {
+  [dir='rtl'] .lang-dropdown-menu {
+    right: 0;
+    left: auto;
+  }
+}
+
+[dir='rtl'] .lang-dropdown-menu .dropdown-item {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-left: none;
+  border-right: 3px solid transparent;
+}
+
+[dir='rtl'] .lang-dropdown-menu .dropdown-item:hover,
+[dir='rtl'] .lang-dropdown-menu .dropdown-item.active {
+  border-left: none;
+  border-right-color: var(--primary-color);
+  padding-right: 1rem;
+}
+
+[dir='rtl'] .brand-section {
+  flex-direction: row;
+}
+
+[dir='rtl'] .fa-arrow-right::before {
+  content: '\f060';
+}
+
+[dir='rtl'] .fa-arrow-left::before {
+  content: '\f061';
+}
+
+[dir='rtl'] .lang-switcher-btn {
+  flex-direction: row;
+}
+
+[dir='rtl'] .lang-switcher-btn::after {
+  display: none;
+}
+
+[dir='rtl'] .lang-switcher-btn:hover {
+  background: transparent;
+  color: var(--primary-color);
+  border-left: none;
+  border-right: none;
+}
+
+[dir='rtl'] .lang-dropdown-menu .dropdown-item {
+  flex-direction: row-reverse;
+}
+
+[dir='rtl'] .lang-dropdown-menu .dropdown-item:hover,
+[dir='rtl'] .lang-dropdown-menu .dropdown-item.active {
+  border-left: none;
+  border-right-color: var(--primary-color);
+}
+
+/* Bootstrap RTL helpers */
+[dir='rtl'] .ms-auto {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+[dir='rtl'] .me-auto {
+  margin-right: 0 !important;
+  margin-left: auto !important;
+}
+
+[dir='rtl'] .text-start {
+  text-align: right !important;
+}
+
+[dir='rtl'] .text-end {
+  text-align: left !important;
+}
+
+@media (min-width: 992px) {
+  [dir='rtl'] .text-lg-start {
+    text-align: right !important;
+  }
+
+  [dir='rtl'] .text-lg-end {
+    text-align: left !important;
+  }
+}
+
+/*
+==================================================
+  RTL: FOOTER
+==================================================
+*/
+
+/* Fix title underline */
+[dir="rtl"] .footer-widget-title::after {
+  left: auto;
+  right: 0;
+}
+
+/* Fix link hover nudge */
+[dir="rtl"] .footer-links a:hover {
+  padding-left: 0;
+  padding-right: 5px;
+}
+
+/* Fix contact icon spacing */
+[dir="rtl"] .footer-contact-list i {
+  margin-right: 0;
+  margin-left: 1rem;
+}
